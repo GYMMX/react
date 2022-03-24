@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter} from "react-router-dom";
+// 라우터를 사용하기 위해 가져온 임포트, yarn add react-router-dom@5.2.1설치 (버전은 컴퓨터마다 다름)
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
+  // 앱을 브라우저 라우터로 감싸주기
   <BrowserRouter>
-   <App />
+    <App />
   </BrowserRouter>,
   document.getElementById('root')
 );
